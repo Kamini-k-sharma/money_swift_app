@@ -6,7 +6,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.ecommerce.moneyswift.R
 import com.ecommerce.moneyswift.data.model.Product
-import com.ecommerce.moneyswift.presentation.screens.CheckoutScreen
 import com.ecommerce.moneyswift.presentation.screens.CheckoutScreenRoute
 import com.ecommerce.moneyswift.presentation.screens.ConfirmationScreen
 import com.ecommerce.moneyswift.presentation.screens.ProductListScreen
@@ -52,6 +51,7 @@ fun AppNavHost(
             )
         }
         composable(Route.SUCCESS_SCREEN) {
+
             ConfirmationScreen(
                 toBack = {
                     navController.navigate(Route.PRODUCT_SCREEN) {

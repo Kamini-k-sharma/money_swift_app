@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ecommerce.moneyswift.data.model.Product
 import com.ecommerce.moneyswift.presentation.state.UiState
+import com.ecommerce.moneyswift.ui.theme.buttonColor
 import com.ecommerce.moneyswift.ui.theme.spacing
 import com.ecommerce.moneyswift.utils.designs.CommonText
 import com.ecommerce.moneyswift.utils.designs.NoResultFound
@@ -98,7 +99,7 @@ fun ProductListItem(product: Product, onProductSelected: (Product) -> Unit) {
                 Text(text = "$${product.price}", fontSize = 16.sp, color = Color.Gray)
             }
             Button(onClick = { onProductSelected(product) }) {
-                Text("Buy")
+                Text("Buy", color = buttonColor)
             }
         }
     }

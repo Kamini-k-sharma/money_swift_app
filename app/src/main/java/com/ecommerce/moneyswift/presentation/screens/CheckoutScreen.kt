@@ -33,6 +33,7 @@ import com.ecommerce.moneyswift.data.model.Product
 import com.ecommerce.moneyswift.data.model.StripeResponse
 import com.ecommerce.moneyswift.presentation.NavigationBar
 import com.ecommerce.moneyswift.presentation.state.UiState
+import com.ecommerce.moneyswift.ui.theme.buttonColor
 import com.ecommerce.moneyswift.utils.Constants
 import com.ecommerce.moneyswift.viewModels.MoneySwiftViewModel
 import com.flexcode.ecommerce.presentation.event.HomeEvent
@@ -90,7 +91,7 @@ fun CheckoutScreen(
 ) {
     Box(
         modifier = Modifier
-            .fillMaxSize()
+            .fillMaxSize(),
     ) {
         Column(
             modifier = Modifier
@@ -124,7 +125,7 @@ fun CheckoutScreen(
                         ),
                     )
                 }) {
-                Text(text = "Pay now", modifier = Modifier.padding(8.dp))
+                Text(text = "Pay now", color = buttonColor, modifier = Modifier.padding(8.dp))
 
             }
         }
