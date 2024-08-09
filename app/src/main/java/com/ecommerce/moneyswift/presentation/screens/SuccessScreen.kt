@@ -29,6 +29,7 @@ fun ConfirmationScreen(
     toBack: () -> Unit,
 ) {
     val onEvent = viewModel::onEvent
+
     LaunchedEffect(key1 = true) {
         onEvent(HomeEvent.ResetState)
     }
