@@ -1,3 +1,7 @@
+## ** Credentials for Payment**
+https://docs.stripe.com/payments/accept-a-payment?platform=android&ui=payment-sheet#android-test-the-integration
+
+
 ## **Tech stack & Libraries 🛠️👨‍💻**
  - [Kotlin](https://kotlinlang.org/docs/reference/) - Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise
  * [Jetpack Components:](https://developer.android.com/topic/architecture?gclid=Cj0KCQjw8O-VBhCpARIsACMvVLOH1satX45o9f4PMQ4Sxr7bG9myl6-KZL9nYda8PJsHV7m2uJL8bzgaAmqiEALw_wcB&gclsrc=aw.ds)
