@@ -1,4 +1,4 @@
-## ** Credentials for Payment**
+## **Credentials for Payment**
 https://docs.stripe.com/payments/accept-a-payment?platform=android&ui=payment-sheet#android-test-the-integration
 
 
