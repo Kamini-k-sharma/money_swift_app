@@ -51,9 +51,7 @@ fun ConfirmationScreen(
                   tint = Color.White,
               )
           }*/
-        NavigationBar {
-            toBack()
-        }
+        NavigationBar(onBack = toBack, label = "Confirmation")
         Column(
             modifier = Modifier
                 .fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally,

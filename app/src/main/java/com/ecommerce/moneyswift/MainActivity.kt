@@ -1,23 +1,17 @@
 package com.ecommerce.moneyswift
 
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.imePadding
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
 import androidx.compose.ui.Modifier
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.ecommerce.moneyswift.navigation.AppNavHost
@@ -40,7 +34,7 @@ class MainActivity : ComponentActivity() {
         val paymentSheet = PaymentSheet(this) { paymentSheetResult ->
             onPaymentSheetResult(paymentSheetResult, navController)
         }
-
+        installSplashScreen()
         setContent {
             navController = rememberNavController()
             MoneySwiftTheme {
@@ -53,7 +47,7 @@ class MainActivity : ComponentActivity() {
                     bottomBar = {
                     },
 
-                ) { innerPadding ->
+                    ) { innerPadding ->
                     Log.d("content padding", "$innerPadding")
                     AppNavHost(navController = navController, paymentSheet = paymentSheet)
 

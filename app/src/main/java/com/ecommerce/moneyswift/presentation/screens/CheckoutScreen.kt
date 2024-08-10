@@ -97,9 +97,7 @@ fun CheckoutScreen(
             modifier = Modifier
                 .fillMaxSize()
         ) {
-            NavigationBar {
-                navigateBack()
-            }
+            NavigationBar(onBack = navigateBack, label = "Checkout")
             Image(
                 painter = painterResource(id = R.drawable.product),
                 contentDescription = product.name
